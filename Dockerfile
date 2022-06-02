@@ -2,7 +2,7 @@
 # Docker file to build a hardened Apache Tomcat image
 ################
 
-FROM tomcat:9.0-jre8
+FROM tomcat:9-jre11-openjdk
 MAINTAINER Joshua Wild <https://github.com/joshuawild>
 ENV TERM=xterm
 
