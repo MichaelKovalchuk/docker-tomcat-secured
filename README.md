@@ -44,7 +44,7 @@ Once the container exits it will be removed automatically by Docker.
 
 Experimental multi-arch build for Linux AMD64 and Linux ARM64:
 
-  ```docker buildx create mybuilder```
+  ```docker buildx create --name mybuilder```
   ```docker buildx use mybuilder```
-  ```docker buildx build  --platform linux/amd64,linux/arm64 -t michaelkovalchuk/tomcat-secured:9-jre11-openjdk --push .```
+  ```docker buildx build  --platform linux/amd64,linux/arm64 -t michaelkovalchuk/tomcat-secured:9-jre17 --push .```
   ```docker buildx rm mybuilder```
